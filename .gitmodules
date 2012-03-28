@@ -1,0 +1,6 @@
+[submodule "Vendor/JSProgressHUD"]
+	path = Vendor/JSProgressHUD
+	url = https://github.com/JaviSoto/JSProgressHUD
+[submodule "Vendor/EGOTableViewPullRefresh"]
+	path = Vendor/EGOTableViewPullRefresh
+	url = https://github.com/enormego/EGOTableViewPullRefresh
