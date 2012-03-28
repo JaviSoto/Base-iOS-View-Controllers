@@ -52,7 +52,7 @@ and than you can just implement this method to make the necessary adjustments to
 - (UITableViewCell *)tableView:(UITableView *)tv configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 ```
 
-Only requirement is that your cell inherits from *JSBaseTableViewCell*.
+Only requirement is that your cell inherits from [*JSBaseTableViewCell*](https://github.com/JaviSoto/Base-View-Controllers/blob/master/JSBaseTableViewCell.h).
 
 - Add **pull-to-refresh** to you table view controller just by setting
 
@@ -104,7 +104,7 @@ which will be called inside the animation block.
 
 and return the view that you want to stay on top of the keyboard.
 
-- **Implement tables that show data from Core Data with very little code** (and that are automatically refreshed with changes in them). Inherit from *JSBaseCoreDataTableViewController* and implement:
+- **Implement tables that show data from Core Data with very little code** (and that are automatically refreshed with changes in them). Inherit from [*JSBaseCoreDataTableViewController*](https://github.com/JaviSoto/Base-View-Controllers/blob/master/JSBaseCoreDataTableViewController.h) and implement:
 
 ```Objective-c
 - (NSFetchRequest *)fetchRequest;
@@ -116,7 +116,7 @@ to return an *NSFetchRequest* object corresponding to the query you want to perf
 - (UITableViewCell *)tableView:(UITableView *)tv configureCell:(UITableViewCell *)cell forManagedObject:(NSManagedObject *)object;
 ```
 
-- Have all your cells automatically be correctly reused even if you forget to set the reuse identifier in Interface Builder. For this you only need to make your cell classes inherit from *JSBaseTableViewCell*.
+- Have all your cells automatically be correctly reused even if you forget to set the reuse identifier in Interface Builder. For this you only need to make your cell classes inherit from [*JSBaseTableViewCell*](https://github.com/JaviSoto/Base-View-Controllers/blob/master/JSBaseTableViewCell.h).
 
 #Submodules
 
@@ -138,4 +138,4 @@ $ git submodule update
 
 **Second**. Drag the entire folder to your Xcode project.
 
-**Third**. (Optional) Modify the method - (NSManagedObjectContext *)managedObjectContext in JSBaseViewController by adding the needed logic to create a NSManagedObjectContext passing your NSPersistantStoreCordinator (ONLY IF YOU WANT TO USE CORE DATA).
+**Third**. (Optional) Modify the method - (NSManagedObjectContext *)managedObjectContext in [*JSBaseViewController*](https://github.com/JaviSoto/Base-View-Controllers/blob/master/JSBaseViewController.m) by adding the needed logic to create a NSManagedObjectContext passing your NSPersistantStoreCordinator (ONLY IF YOU WANT TO USE CORE DATA).
