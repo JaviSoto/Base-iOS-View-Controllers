@@ -17,12 +17,15 @@
 #Features
 
 - One generic method to construct your controllers: forget about implementing the right - initWith, awakeFromNib... just implement
-```Objective-c
+
+```objective-c
 - (void)setUp;
 ```
+
 and be sure it will be called once in all cases.
 
 - Easy way to show / hide a flexible progress HUD when you make long-running requests from all your View Controllers.
+
 ```Objective-c
 - (void)showWaitView;
 - (void)showWaitViewAndDimScreen;
@@ -56,6 +59,7 @@ self.tableHasPullToRefresh = YES;
 ```
 
 in your setUp method. And then use these two methods:
+
 ```Objective-c
 /* Implement this method to respond to drag to refresh events */
 - (void)reloadTableViewDataSource;
@@ -66,22 +70,28 @@ in your setUp method. And then use these two methods:
 - Same for table infinite scrolling with self.tableHasInfiniteScrolling = YES;
 
 - Automatically have your view adjusted when the keyboard appears. Just by calling
+
 ```Objective-c
 [self registerForKeyboardNotifications];
 ```
 
 in your setUp method. If it's a regular view controller, you can implement 
+
 ```Objective-c
 - (void)animateViewWithKeyboardUpDirection:(BOOL)up distance:(float)distance animationDuration:(NSTimeInterval)duration animationCurve:(UIViewAnimationCurve)curve;
 ```
+
 and create your animation with that data.
 If it's a Table View Controller, the table will automatically adjust. if you want to provide custom behaviour, you can implement
+
 ```Objective-c
 - (void)tableViewWillBeResizedToAdjustForKeyboardHidden:(BOOL)keyboardHidden keyboardHeight:(CGFloat)keyboardHeight;
 ```
+
 which will be called inside the animation block.
 
 - Have a view stick on top of the keyboard and animate with it (very convenient for typical chat / comment views). Just implement the method:
+
 ```Objective-c
 - (UIView *)keyboardAuxView;
 ```
@@ -89,10 +99,13 @@ which will be called inside the animation block.
 and return the view that you want to stay on top of the keyboard.
 
 - Implement tables that show data from Core Data (and that are automatically refreshed with changes in them). Inherit from JSBaseCoreDataTableViewController and implement
+
 ```Objective-c
 - (NSFetchRequest *)fetchRequest;
 ```
+
 to return a NSFetchRequest object corresponding to the query you want to perform. And then implement this other method that will be called on you:
+
 ```Objective-c
 - (UITableViewCell *)tableView:(UITableView *)tv configureCell:(UITableViewCell *)cell forManagedObject:(NSManagedObject *)object;
 ```
@@ -100,12 +113,16 @@ to return a NSFetchRequest object corresponding to the query you want to perform
 - Have all your cells automatically be correctly reused even if you forget to set the reuse identifier in Interface Builder. For this you only need to make your cell classes inherit from JSBaseTableViewCell.
 
 #Submodules
+
+```
 - JSProgressHUD: https://github.com/JaviSoto/JSProgressHUD
 - EGOTableViewPullRefresh: https://github.com/enormego/EGOTableViewPullRefresh
+```
 
 #Installation
 
 1. 
+
 ```bash
 $ git clone git@github.com:JaviSoto/Base-View-Controllers.git
 $ cd Base-View-Controllers
