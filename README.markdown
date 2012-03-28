@@ -139,3 +139,7 @@ $ git submodule update
 **Second**. Drag the entire folder to your Xcode project.
 
 **Third**. (Optional) Modify the method - (NSManagedObjectContext *)managedObjectContext in [*JSBaseViewController*](https://github.com/JaviSoto/Base-iOS-View-Controllers/blob/master/JSBaseViewController.m) by adding the needed logic to create a NSManagedObjectContext passing your NSPersistantStoreCordinator (ONLY IF YOU WANT TO USE CORE DATA).
+
+#Credits
+
+Thanks to [Oriol Blanc](http://es.linkedin.com/in/oriolblanc), because a lot of this is thanks to him :)
