@@ -19,6 +19,7 @@
 #import <CoreData/CoreData.h>
 
 #import "JSProgressHUD.h"
+#import "JSAppDelegate.h" // This is imported to get the persistant store coordinator. Please don't do this and put it somewhere else in your project!
 
 #define kDefaultViewKeyboardSlideSpeed 0.3f
 
@@ -116,10 +117,12 @@
 {
     if (!_managedObjectContext)
     {
-		// Create a new, separate managed Object Context for your VC here:
-		/* __managedObjectContext = [[NSManagedObjectContext alloc] init];
-        [__managedObjectContext setPersistentStoreCoordinator:coordinator];
-        */
+		// IMPORTANT: Create a new, separate managed Object Context for your VC here. This needs to be changed for each project!
+		_managedObjectContext = [[NSManagedObjectContext alloc] init];
+        
+        NSPersistentStoreCoordinator *persistantStoreCoordinator = [((JSAppDelegate *)[[UIApplication sharedApplication] delegate]) persistentStoreCoordinator];
+    
+        _managedObjectContext.persistentStoreCoordinator = persistantStoreCoordinator;
     }
     
     return _managedObjectContext;
