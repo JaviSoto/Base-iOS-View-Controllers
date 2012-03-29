@@ -25,6 +25,8 @@
 @interface JSBaseViewController ()
 {
     BOOL waitViewVisible;
+    
+    BOOL _shouldListenForKeyboardNotifications;
 }
 
 @property (nonatomic, readwrite, retain) NSManagedObjectContext *managedObjectContext;
@@ -75,6 +77,12 @@
     
 	NSLog(@"[%@] viewWillAppear:", NSStringFromClass([self class])); // Log each viewWillAppear. Very useful for debugging.
     
+    if (_shouldListenForKeyboardNotifications)
+    {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardShowOrHideNotification:) name:UIKeyboardWillShowNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardShowOrHideNotification:) name:UIKeyboardWillHideNotification object:nil];
+    }
+    
     viewVisible = YES;
 }
 
@@ -83,6 +91,17 @@
     [super viewWillDisappear:animated];
     
     viewVisible = NO;
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    if (_shouldListenForKeyboardNotifications)
+    {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -169,8 +188,7 @@
 
 - (void)registerForKeyboardNotifications
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardShowOrHideNotification:) name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardShowOrHideNotification:) name:UIKeyboardWillHideNotification object:nil];
+    _shouldListenForKeyboardNotifications = YES;
 }
 
 - (void)keyboardShowOrHideNotification:(NSNotification *)notification
