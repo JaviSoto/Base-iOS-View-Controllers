@@ -43,8 +43,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tv configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 
 #pragma mark - Keyboard Management. Implement the needed
-/* This will be called inside the animation block to allow you to make other changes to the view when the keyboard is being shown / dismissed */
-- (void)tableViewWillBeResizedToAdjustForKeyboardHidden:(BOOL)keyboardHidden keyboardHeight:(CGFloat)keyboardHeight;
 /* Return a UIView to automatically have it *stick* on top of the keyboard animatically */
 - (UIView *)keyboardAuxView;
 /* Default is the whole view - keyboardAuxView.frame.size.height. Implement if your table view doesn't fill the whole screen */

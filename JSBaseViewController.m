@@ -158,7 +158,7 @@
 
 - (void)animateViewWithKeyboardUpDirection:(BOOL)up distance:(float)distance animationDuration:(NSTimeInterval)duration animationCurve:(UIViewAnimationCurve)curve
 {
-    const int movementDistance = distance; // tweak as needed
+    const int movementDistance = distance;
     
 	int movement = (up ? -movementDistance : movementDistance);
     
@@ -186,9 +186,20 @@
     [self animateViewWithKeyboardUpDirection:!keyboardHidden distance:keyboardHeight animationDuration:animationDuration animationCurve:curve];
 }
 
-- (void)keyboardWillBecomeHidden:(BOOL)keyboardHidden withAnimationDuration:(NSTimeInterval)animationDuration curve:(UIViewAnimationCurve)curve keyboardHeight:(CGFloat)keyboardHeight
+- (void)viewWillAdjustForKeyboardHidden:(BOOL)keyboardHidden keyboardHeight:(CGFloat)keyboardHeight
 {
+    // Empty default implementation
+}
+
+- (void)keyboardWillBecomeHidden:(BOOL)keyboardHidden withAnimationDuration:(NSTimeInterval)animationDuration curve:(UIViewAnimationCurve)curve keyboardHeight:(CGFloat)_keyboardHeight
+{
+    curve |= UIViewAnimationOptionBeginFromCurrentState;
     
+    [UIView animateWithDuration:animationDuration delay:0.0 options:curve animations:^{        
+        CGFloat keyboardHeight = keyboardHidden ? 0.0 : _keyboardHeight;
+        
+        [self viewWillAdjustForKeyboardHidden:keyboardHidden keyboardHeight:keyboardHeight];        
+    } completion:NULL];
 }
 
 - (void)keyboardWillBecomeHidden:(BOOL)keyboardHidden withNotificationInfo:(NSDictionary *)notificationInfo
@@ -207,7 +218,7 @@
 
 - (void)dealloc
 {
-    LogMethod();
+	NSLog(@"[%@] dealloc:", NSStringFromClass([self class])); // Log each dealloc. Very useful for debugging.
     
     [_managedObjectContext release];
     

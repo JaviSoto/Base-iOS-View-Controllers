@@ -21,7 +21,7 @@
 
 @interface JSBaseViewController : UIViewController
 {
-	/* Useful to prevent multiple simultaneous requests */
+    /* Useful to prevent multiple simultaneous requests */
     BOOL searching;
     
     BOOL viewVisible;
@@ -50,6 +50,9 @@
 
 - (void)animateViewWithKeyboardUpDirection:(BOOL)up distance:(float)distance animationDuration:(NSTimeInterval)duration animationCurve:(UIViewAnimationCurve)curve;
 - (void)defaultKeyboardAppereanceBehaviourForKeyboardHidden:(BOOL)keyboardHidden animationDuration:(NSTimeInterval)animationDuration curve:(UIViewAnimationCurve)curve keyboardHeight:(CGFloat)keyboardHeight;
+
+/* This will be called inside the animation block to allow you to make other changes to the view when the keyboard is being shown / dismissed */
+- (void)viewWillAdjustForKeyboardHidden:(BOOL)keyboardHidden keyboardHeight:(CGFloat)keyboardHeight;
 
 /* Overwrite this method to implement custom behaviour. Call defaultKeyboardAppereanceBehaviourForKeyboardHidden:animationDuration:curve:keyboardHeight: for inside for a default behaviour (moving up the whole view keyboardHeight pixels) */
 - (void)keyboardWillBecomeHidden:(BOOL)keyboardHidden withAnimationDuration:(NSTimeInterval)animationDuration curve:(UIViewAnimationCurve)curve keyboardHeight:(CGFloat)keyboardHeight;

@@ -25,9 +25,6 @@
 @property (nonatomic, retain) UINib *cellNib;
 @property (nonatomic, retain) EGORefreshTableHeaderView *refreshHeaderView;
 
-- (void)setUp;
-
-- (void)reloadTableViewDataSource;
 @end
 
 @implementation JSBaseTableViewController
@@ -203,11 +200,6 @@
 
 #pragma mark - Keyboard Management
 
-- (void)tableViewWillBeResizedToAdjustForKeyboardHidden:(BOOL)keyboardHidden keyboardHeight:(CGFloat)keyboardHeight
-{
-	// Empty default implementation
-}
-
 - (UIView *)keyboardAuxView
 {
     return nil;
@@ -218,25 +210,17 @@
     return self.view.frame.size.height - [self keyboardAuxView].frame.size.height;
 }
 
-- (void)keyboardWillBecomeHidden:(BOOL)keyboardHidden withAnimationDuration:(NSTimeInterval)animationDuration curve:(UIViewAnimationCurve)curve keyboardHeight:(CGFloat)_keyboardHeight
-{   
-    curve |= UIViewAnimationOptionBeginFromCurrentState;
+- (void)viewWillAdjustForKeyboardHidden:(BOOL)keyboardHidden keyboardHeight:(CGFloat)keyboardHeight
+{
+    UIView *keyboardAuxView = [self keyboardAuxView];
     
-    [UIView animateWithDuration:animationDuration delay:0.0 options:curve animations:^{        
-        CGFloat keyboardHeight = keyboardHidden ? 0.0 : _keyboardHeight;
-        
-        [self tableViewWillBeResizedToAdjustForKeyboardHidden:keyboardHidden keyboardHeight:keyboardHeight];
-        
-        UIView *keyboardAuxView = [self keyboardAuxView];
-        
-        CGRect keyboardAuxViewFrame = [self keyboardAuxView].frame;        
-        keyboardAuxViewFrame.origin.y = self.view.frame.size.height - keyboardHeight - keyboardAuxViewFrame.size.height;
-        keyboardAuxView.frame = keyboardAuxViewFrame;        
-        
-        CGRect tableViewFrame = self.tableView.frame;
-        tableViewFrame.size.height = [self tableViewHeight] - keyboardHeight;
-        self.tableView.frame = tableViewFrame;
-    } completion:NULL];
+    CGRect keyboardAuxViewFrame = [self keyboardAuxView].frame;        
+    keyboardAuxViewFrame.origin.y = self.view.frame.size.height - keyboardHeight - keyboardAuxViewFrame.size.height;
+    keyboardAuxView.frame = keyboardAuxViewFrame;        
+    
+    CGRect tableViewFrame = self.tableView.frame;
+    tableViewFrame.size.height = [self tableViewHeight] - keyboardHeight;
+    self.tableView.frame = tableViewFrame;
 }
 
 #pragma mark - Memory Management
