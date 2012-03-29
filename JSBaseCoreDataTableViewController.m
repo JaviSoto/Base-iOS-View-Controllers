@@ -25,11 +25,35 @@
 @synthesize fetchedResultsController = _fetchedResultsController;
 @synthesize shouldCacheFetchedObjects = _shouldCacheFetchedObjects;
 
+#pragma mark - View LifeCycle
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    NSError *error = nil;
+    [self.fetchedResultsController performFetch:&error];
+    
+    if (error)
+    {
+        NSLog(@"[%@] Error perfoming fetch: %@", NSStringFromClass([self class]), error);
+    }
+}
+
 #pragma mark - Table View Methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return self.fetchedResultsController.sections.count;
+    NSUInteger numberOfSections = self.fetchedResultsController.sections.count;
+
+    return  numberOfSections > 0 ? numberOfSections : 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
