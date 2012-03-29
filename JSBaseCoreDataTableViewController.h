@@ -16,7 +16,7 @@
 
 #import <CoreData/CoreData.h>
 
-#import "BaseTableViewController.h"
+#import "JSBaseTableViewController.h"
 
 @interface JSBaseCoreDataTableViewController : JSBaseTableViewController
 

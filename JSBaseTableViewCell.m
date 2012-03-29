@@ -16,6 +16,8 @@
 
 #import "JSBaseTableViewCell.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 @implementation JSBaseTableViewCell
 
 + (NSString *)reuseIdentifier

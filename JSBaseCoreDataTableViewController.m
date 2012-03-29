@@ -14,7 +14,7 @@
  limitations under the License. 
  */
 
-#import "JSBaseCoreDataBackedTableViewController.h"
+#import "JSBaseCoreDataTableViewController.h"
 
 @interface JSBaseCoreDataTableViewController () <NSFetchedResultsControllerDelegate>
 
