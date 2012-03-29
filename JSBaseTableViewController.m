@@ -214,12 +214,16 @@
 {
     UIView *keyboardAuxView = [self keyboardAuxView];
     
-    CGRect keyboardAuxViewFrame = [self keyboardAuxView].frame;        
-    keyboardAuxViewFrame.origin.y = self.view.frame.size.height - keyboardHeight - keyboardAuxViewFrame.size.height;
-    keyboardAuxView.frame = keyboardAuxViewFrame;        
+    CGRect keyboardAuxViewFrame = keyboardAuxView.frame;
+    
+    // This is because the keyboard appears on top of the tab bar!
+    CGFloat heightOfScreen = keyboardHidden ? self.view.frame.size.height : [UIScreen mainScreen].applicationFrame.size.height;
+    
+    keyboardAuxViewFrame.origin.y = heightOfScreen - keyboardHeight - keyboardAuxViewFrame.size.height;
+    keyboardAuxView.frame = keyboardAuxViewFrame;
     
     CGRect tableViewFrame = self.tableView.frame;
-    tableViewFrame.size.height = [self tableViewHeight] - keyboardHeight;
+    tableViewFrame.size.height = [self tableViewHeight];
     self.tableView.frame = tableViewFrame;
 }
 
