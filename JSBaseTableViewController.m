@@ -205,25 +205,26 @@
     return nil;
 }
 
-- (CGFloat)tableViewHeight
+- (CGFloat)viewHeightForKeyboardHidden:(BOOL)hidden
 {
-    return self.view.frame.size.height - [self keyboardAuxView].frame.size.height;
+    // This is because the keyboard appears on top of the tab bar!
+    CGFloat heightOfView = hidden ? self.view.frame.size.height : [UIScreen mainScreen].applicationFrame.size.height - self.navigationController.navigationBar.frame.size.height;
+    
+    return heightOfView;
 }
-
 - (void)viewWillAdjustForKeyboardHidden:(BOOL)keyboardHidden keyboardHeight:(CGFloat)keyboardHeight
 {
     UIView *keyboardAuxView = [self keyboardAuxView];
     
     CGRect keyboardAuxViewFrame = keyboardAuxView.frame;
     
-    // This is because the keyboard appears on top of the tab bar!
-    CGFloat heightOfScreen = keyboardHidden ? self.view.frame.size.height : [UIScreen mainScreen].applicationFrame.size.height;
+    CGFloat heightOfView = [self viewHeightForKeyboardHidden:keyboardHidden];
     
-    keyboardAuxViewFrame.origin.y = heightOfScreen - keyboardHeight - keyboardAuxViewFrame.size.height;
+    keyboardAuxViewFrame.origin.y = heightOfView - keyboardHeight - keyboardAuxViewFrame.size.height;
     keyboardAuxView.frame = keyboardAuxViewFrame;
     
     CGRect tableViewFrame = self.tableView.frame;
-    tableViewFrame.size.height = [self tableViewHeight];
+    tableViewFrame.size.height = heightOfView - keyboardHeight - [self keyboardAuxView].frame.size.height;
     self.tableView.frame = tableViewFrame;
 }
 

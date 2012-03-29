@@ -45,8 +45,6 @@
 #pragma mark - Keyboard Management. Implement the needed
 /* Return a UIView to automatically have it *stick* on top of the keyboard animatically */
 - (UIView *)keyboardAuxView;
-/* Default is the whole view - keyboardAuxView.frame.size.height. Implement if your table view doesn't fill the whole screen */
-- (CGFloat)tableViewHeight;
 
 /* Aux method for tables with more than one element per row */
 - (NSRange)rangeOfElementsForCellAtIndexPath:(NSIndexPath *)indexPath elementsPerRow:(NSUInteger)elementsPerRow totalElements:(NSUInteger)totalElements;
