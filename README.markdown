@@ -136,7 +136,7 @@ $ git submodule init
 $ git submodule update
 ```
 
-**Second**. Drag the entire folder to your Xcode project.
+**Second**. Drag the BaseControllers folder to your Xcode project. And remove the unneeded files (like the EGOTableViewPullRefresh sample project)
 
 **Third**. Link against these frameworks:
 

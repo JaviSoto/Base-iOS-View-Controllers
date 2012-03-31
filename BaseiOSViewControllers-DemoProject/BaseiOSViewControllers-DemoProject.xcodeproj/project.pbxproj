@@ -16,53 +16,6 @@
 		1D47030B1526FFF10058C7CC /* JSBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4703051526FFF10058C7CC /* JSBaseTableViewCell.m */; };
 		1D47030C1526FFF10058C7CC /* JSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4703071526FFF10058C7CC /* JSBaseTableViewController.m */; };
 		1D47030D1526FFF10058C7CC /* JSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4703091526FFF10058C7CC /* JSBaseViewController.m */; };
-		1D470376152702CB0058C7CC /* TableViewPull.app in Resources */ = {isa = PBXBuildFile; fileRef = 1D470314152702CA0058C7CC /* TableViewPull.app */; };
-		1D470377152702CB0058C7CC /* TableViewPull.app.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 1D470315152702CA0058C7CC /* TableViewPull.app.dSYM */; };
-		1D470378152702CB0058C7CC /* build-state.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1D470319152702CA0058C7CC /* build-state.dat */; };
-		1D470379152702CB0058C7CC /* TableViewPull.dep in Resources */ = {isa = PBXBuildFile; fileRef = 1D47031A152702CA0058C7CC /* TableViewPull.dep */; };
-		1D47037A152702CB0058C7CC /* build-state.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1D47031D152702CA0058C7CC /* build-state.dat */; };
-		1D47037B152702CB0058C7CC /* TableViewPull.dep in Resources */ = {isa = PBXBuildFile; fileRef = 1D47031E152702CB0058C7CC /* TableViewPull.dep */; };
-		1D47037C152702CB0058C7CC /* build-state.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1D470321152702CB0058C7CC /* build-state.dat */; };
-		1D47037D152702CB0058C7CC /* build-state~.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1D470322152702CB0058C7CC /* build-state~.dat */; };
-		1D47037E152702CB0058C7CC /* EGORefreshTableHeaderView.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D470325152702CB0058C7CC /* EGORefreshTableHeaderView.o */; };
-		1D47037F152702CB0058C7CC /* main.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D470326152702CB0058C7CC /* main.o */; };
-		1D470380152702CB0058C7CC /* RootViewController.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D470327152702CB0058C7CC /* RootViewController.o */; };
-		1D470381152702CB0058C7CC /* TableViewPull.LinkFileList in Resources */ = {isa = PBXBuildFile; fileRef = 1D470328152702CB0058C7CC /* TableViewPull.LinkFileList */; };
-		1D470382152702CB0058C7CC /* TableViewPullAppDelegate.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D470329152702CB0058C7CC /* TableViewPullAppDelegate.o */; };
-		1D470383152702CB0058C7CC /* TableViewPull-all-target-headers.hmap in Resources */ = {isa = PBXBuildFile; fileRef = 1D47032A152702CB0058C7CC /* TableViewPull-all-target-headers.hmap */; };
-		1D470384152702CB0058C7CC /* TableViewPull-generated-files.hmap in Resources */ = {isa = PBXBuildFile; fileRef = 1D47032B152702CB0058C7CC /* TableViewPull-generated-files.hmap */; };
-		1D470385152702CB0058C7CC /* TableViewPull-own-target-headers.hmap in Resources */ = {isa = PBXBuildFile; fileRef = 1D47032C152702CB0058C7CC /* TableViewPull-own-target-headers.hmap */; };
-		1D470386152702CB0058C7CC /* TableViewPull-project-headers.hmap in Resources */ = {isa = PBXBuildFile; fileRef = 1D47032D152702CB0058C7CC /* TableViewPull-project-headers.hmap */; };
-		1D470387152702CB0058C7CC /* TableViewPull.dep in Resources */ = {isa = PBXBuildFile; fileRef = 1D47032E152702CB0058C7CC /* TableViewPull.dep */; };
-		1D470388152702CB0058C7CC /* TableViewPull.hmap in Resources */ = {isa = PBXBuildFile; fileRef = 1D47032F152702CB0058C7CC /* TableViewPull.hmap */; };
-		1D470389152702CB0058C7CC /* TableViewPull~.dep in Resources */ = {isa = PBXBuildFile; fileRef = 1D470330152702CB0058C7CC /* TableViewPull~.dep */; };
-		1D47038A152702CB0058C7CC /* categories.pbxbtree in Resources */ = {isa = PBXBuildFile; fileRef = 1D470332152702CB0058C7CC /* categories.pbxbtree */; };
-		1D47038B152702CB0058C7CC /* cdecls.pbxbtree in Resources */ = {isa = PBXBuildFile; fileRef = 1D470333152702CB0058C7CC /* cdecls.pbxbtree */; };
-		1D47038C152702CB0058C7CC /* decls.pbxbtree in Resources */ = {isa = PBXBuildFile; fileRef = 1D470334152702CB0058C7CC /* decls.pbxbtree */; };
-		1D47038D152702CB0058C7CC /* files.pbxbtree in Resources */ = {isa = PBXBuildFile; fileRef = 1D470335152702CB0058C7CC /* files.pbxbtree */; };
-		1D47038E152702CB0058C7CC /* imports.pbxbtree in Resources */ = {isa = PBXBuildFile; fileRef = 1D470336152702CB0058C7CC /* imports.pbxbtree */; };
-		1D47038F152702CB0058C7CC /* pbxindex.header in Resources */ = {isa = PBXBuildFile; fileRef = 1D470337152702CB0058C7CC /* pbxindex.header */; };
-		1D470390152702CB0058C7CC /* protocols.pbxbtree in Resources */ = {isa = PBXBuildFile; fileRef = 1D470338152702CB0058C7CC /* protocols.pbxbtree */; };
-		1D470391152702CB0058C7CC /* refs.pbxbtree in Resources */ = {isa = PBXBuildFile; fileRef = 1D470339152702CB0058C7CC /* refs.pbxbtree */; };
-		1D470392152702CB0058C7CC /* control in Resources */ = {isa = PBXBuildFile; fileRef = 1D47033B152702CB0058C7CC /* control */; };
-		1D470393152702CB0058C7CC /* strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D47033C152702CB0058C7CC /* strings */; };
-		1D470394152702CB0058C7CC /* subclasses.pbxbtree in Resources */ = {isa = PBXBuildFile; fileRef = 1D47033D152702CB0058C7CC /* subclasses.pbxbtree */; };
-		1D470395152702CB0058C7CC /* symbols0.pbxsymbols in Resources */ = {isa = PBXBuildFile; fileRef = 1D47033E152702CB0058C7CC /* symbols0.pbxsymbols */; };
-		1D470396152702CB0058C7CC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D470343152702CB0058C7CC /* RootViewController.m */; };
-		1D470397152702CB0058C7CC /* TableViewPullAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D470346152702CB0058C7CC /* TableViewPullAppDelegate.m */; };
-		1D470398152702CB0058C7CC /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D47034A152702CB0058C7CC /* EGORefreshTableHeaderView.m */; };
-		1D470399152702CB0058C7CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D47034B152702CB0058C7CC /* main.m */; };
-		1D47039A152702CB0058C7CC /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D47034D152702CB0058C7CC /* blackArrow.png */; };
-		1D47039B152702CB0058C7CC /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D47034E152702CB0058C7CC /* blackArrow@2x.png */; };
-		1D47039C152702CB0058C7CC /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D47034F152702CB0058C7CC /* blueArrow.png */; };
-		1D47039D152702CB0058C7CC /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D470350152702CB0058C7CC /* blueArrow@2x.png */; };
-		1D47039E152702CB0058C7CC /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D470351152702CB0058C7CC /* grayArrow.png */; };
-		1D47039F152702CB0058C7CC /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D470352152702CB0058C7CC /* grayArrow@2x.png */; };
-		1D4703A0152702CB0058C7CC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D470353152702CB0058C7CC /* MainWindow.xib */; };
-		1D4703A1152702CB0058C7CC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D470354152702CB0058C7CC /* RootViewController.xib */; };
-		1D4703A2152702CB0058C7CC /* TableViewPull-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D470355152702CB0058C7CC /* TableViewPull-Info.plist */; };
-		1D4703A3152702CB0058C7CC /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D470356152702CB0058C7CC /* whiteArrow.png */; };
-		1D4703A4152702CB0058C7CC /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D470357152702CB0058C7CC /* whiteArrow@2x.png */; };
 		1D4703A5152702CB0058C7CC /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D470360152702CB0058C7CC /* EGORefreshTableHeaderView.m */; };
 		1D4703A6152702CB0058C7CC /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D470362152702CB0058C7CC /* blackArrow.png */; };
 		1D4703A7152702CB0058C7CC /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D470363152702CB0058C7CC /* blackArrow@2x.png */; };
@@ -72,11 +25,8 @@
 		1D4703AB152702CB0058C7CC /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D470367152702CB0058C7CC /* grayArrow@2x.png */; };
 		1D4703AC152702CB0058C7CC /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D470368152702CB0058C7CC /* whiteArrow.png */; };
 		1D4703AD152702CB0058C7CC /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D470369152702CB0058C7CC /* whiteArrow@2x.png */; };
-		1D4703AE152702CB0058C7CC /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1D47036A152702CB0058C7CC /* README */; };
-		1D4703AF152702CB0058C7CC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1D47036C152702CB0058C7CC /* .gitignore */; };
 		1D4703B0152702CB0058C7CC /* JSProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D47036E152702CB0058C7CC /* JSProgressHUD.bundle */; };
 		1D4703B1152702CB0058C7CC /* JSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D470370152702CB0058C7CC /* JSProgressHUD.m */; };
-		1D4703B2152702CB0058C7CC /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 1D470371152702CB0058C7CC /* README.markdown */; };
 		1DAB9A6D152463F800D4D8E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DAB9A6C152463F800D4D8E3 /* UIKit.framework */; };
 		1DAB9A6F152463F800D4D8E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DAB9A6E152463F800D4D8E3 /* Foundation.framework */; };
 		1DAB9A71152463F800D4D8E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DAB9A70152463F800D4D8E3 /* CoreGraphics.framework */; };
@@ -99,16 +49,6 @@
 		1DDD976D15248A5D00155F5D /* JSCreateToDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD976B15248A5D00155F5D /* JSCreateToDoViewController.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1D4703B4152702CB0058C7CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1D470358152702CB0058C7CC /* TableViewPull.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
-			remoteInfo = TableViewPull;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		1D026289152472AF0015BAF2 /* JSFakeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSFakeRequest.h; path = Model/JSFakeRequest.h; sourceTree = "<group>"; };
 		1D02628A152472AF0015BAF2 /* JSFakeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSFakeRequest.m; path = Model/JSFakeRequest.m; sourceTree = "<group>"; };
@@ -126,58 +66,6 @@
 		1D4703071526FFF10058C7CC /* JSBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseTableViewController.m; sourceTree = "<group>"; };
 		1D4703081526FFF10058C7CC /* JSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseViewController.h; sourceTree = "<group>"; };
 		1D4703091526FFF10058C7CC /* JSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseViewController.m; sourceTree = "<group>"; };
-		1D470314152702CA0058C7CC /* TableViewPull.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = TableViewPull.app; sourceTree = "<group>"; };
-		1D470315152702CA0058C7CC /* TableViewPull.app.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = TableViewPull.app.dSYM; sourceTree = "<group>"; };
-		1D470319152702CA0058C7CC /* build-state.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "build-state.dat"; sourceTree = "<group>"; };
-		1D47031A152702CA0058C7CC /* TableViewPull.dep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TableViewPull.dep; sourceTree = "<group>"; };
-		1D47031D152702CA0058C7CC /* build-state.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "build-state.dat"; sourceTree = "<group>"; };
-		1D47031E152702CB0058C7CC /* TableViewPull.dep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TableViewPull.dep; sourceTree = "<group>"; };
-		1D470321152702CB0058C7CC /* build-state.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "build-state.dat"; sourceTree = "<group>"; };
-		1D470322152702CB0058C7CC /* build-state~.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "build-state~.dat"; sourceTree = "<group>"; };
-		1D470325152702CB0058C7CC /* EGORefreshTableHeaderView.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = EGORefreshTableHeaderView.o; sourceTree = "<group>"; };
-		1D470326152702CB0058C7CC /* main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = main.o; sourceTree = "<group>"; };
-		1D470327152702CB0058C7CC /* RootViewController.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = RootViewController.o; sourceTree = "<group>"; };
-		1D470328152702CB0058C7CC /* TableViewPull.LinkFileList */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TableViewPull.LinkFileList; sourceTree = "<group>"; };
-		1D470329152702CB0058C7CC /* TableViewPullAppDelegate.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TableViewPullAppDelegate.o; sourceTree = "<group>"; };
-		1D47032A152702CB0058C7CC /* TableViewPull-all-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TableViewPull-all-target-headers.hmap"; sourceTree = "<group>"; };
-		1D47032B152702CB0058C7CC /* TableViewPull-generated-files.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TableViewPull-generated-files.hmap"; sourceTree = "<group>"; };
-		1D47032C152702CB0058C7CC /* TableViewPull-own-target-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TableViewPull-own-target-headers.hmap"; sourceTree = "<group>"; };
-		1D47032D152702CB0058C7CC /* TableViewPull-project-headers.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TableViewPull-project-headers.hmap"; sourceTree = "<group>"; };
-		1D47032E152702CB0058C7CC /* TableViewPull.dep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TableViewPull.dep; sourceTree = "<group>"; };
-		1D47032F152702CB0058C7CC /* TableViewPull.hmap */ = {isa = PBXFileReference; lastKnownFileType = file; path = TableViewPull.hmap; sourceTree = "<group>"; };
-		1D470330152702CB0058C7CC /* TableViewPull~.dep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TableViewPull~.dep"; sourceTree = "<group>"; };
-		1D470332152702CB0058C7CC /* categories.pbxbtree */ = {isa = PBXFileReference; lastKnownFileType = file; path = categories.pbxbtree; sourceTree = "<group>"; };
-		1D470333152702CB0058C7CC /* cdecls.pbxbtree */ = {isa = PBXFileReference; lastKnownFileType = file; path = cdecls.pbxbtree; sourceTree = "<group>"; };
-		1D470334152702CB0058C7CC /* decls.pbxbtree */ = {isa = PBXFileReference; lastKnownFileType = file; path = decls.pbxbtree; sourceTree = "<group>"; };
-		1D470335152702CB0058C7CC /* files.pbxbtree */ = {isa = PBXFileReference; lastKnownFileType = file; path = files.pbxbtree; sourceTree = "<group>"; };
-		1D470336152702CB0058C7CC /* imports.pbxbtree */ = {isa = PBXFileReference; lastKnownFileType = file; path = imports.pbxbtree; sourceTree = "<group>"; };
-		1D470337152702CB0058C7CC /* pbxindex.header */ = {isa = PBXFileReference; lastKnownFileType = file; path = pbxindex.header; sourceTree = "<group>"; };
-		1D470338152702CB0058C7CC /* protocols.pbxbtree */ = {isa = PBXFileReference; lastKnownFileType = file; path = protocols.pbxbtree; sourceTree = "<group>"; };
-		1D470339152702CB0058C7CC /* refs.pbxbtree */ = {isa = PBXFileReference; lastKnownFileType = file; path = refs.pbxbtree; sourceTree = "<group>"; };
-		1D47033B152702CB0058C7CC /* control */ = {isa = PBXFileReference; lastKnownFileType = file; path = control; sourceTree = "<group>"; };
-		1D47033C152702CB0058C7CC /* strings */ = {isa = PBXFileReference; lastKnownFileType = file; path = strings; sourceTree = "<group>"; };
-		1D47033D152702CB0058C7CC /* subclasses.pbxbtree */ = {isa = PBXFileReference; lastKnownFileType = file; path = subclasses.pbxbtree; sourceTree = "<group>"; };
-		1D47033E152702CB0058C7CC /* symbols0.pbxsymbols */ = {isa = PBXFileReference; lastKnownFileType = file; path = symbols0.pbxsymbols; sourceTree = "<group>"; };
-		1D470342152702CB0058C7CC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		1D470343152702CB0058C7CC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		1D470345152702CB0058C7CC /* TableViewPullAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewPullAppDelegate.h; sourceTree = "<group>"; };
-		1D470346152702CB0058C7CC /* TableViewPullAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewPullAppDelegate.m; sourceTree = "<group>"; };
-		1D470349152702CB0058C7CC /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
-		1D47034A152702CB0058C7CC /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
-		1D47034B152702CB0058C7CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1D47034D152702CB0058C7CC /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
-		1D47034E152702CB0058C7CC /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
-		1D47034F152702CB0058C7CC /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
-		1D470350152702CB0058C7CC /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
-		1D470351152702CB0058C7CC /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
-		1D470352152702CB0058C7CC /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
-		1D470353152702CB0058C7CC /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		1D470354152702CB0058C7CC /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
-		1D470355152702CB0058C7CC /* TableViewPull-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TableViewPull-Info.plist"; sourceTree = "<group>"; };
-		1D470356152702CB0058C7CC /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
-		1D470357152702CB0058C7CC /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
-		1D470358152702CB0058C7CC /* TableViewPull.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TableViewPull.xcodeproj; sourceTree = "<group>"; };
-		1D47035B152702CB0058C7CC /* TableViewPull_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewPull_Prefix.pch; sourceTree = "<group>"; };
 		1D47035F152702CB0058C7CC /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		1D470360152702CB0058C7CC /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		1D470362152702CB0058C7CC /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
@@ -188,12 +76,9 @@
 		1D470367152702CB0058C7CC /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
 		1D470368152702CB0058C7CC /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
 		1D470369152702CB0058C7CC /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
-		1D47036A152702CB0058C7CC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		1D47036C152702CB0058C7CC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1D47036E152702CB0058C7CC /* JSProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSProgressHUD.bundle; sourceTree = "<group>"; };
 		1D47036F152702CB0058C7CC /* JSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSProgressHUD.h; sourceTree = "<group>"; };
 		1D470370152702CB0058C7CC /* JSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSProgressHUD.m; sourceTree = "<group>"; };
-		1D470371152702CB0058C7CC /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		1DAB9A68152463F800D4D8E3 /* BaseiOSViewControllers-DemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaseiOSViewControllers-DemoProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAB9A6C152463F800D4D8E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1DAB9A6E152463F800D4D8E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -235,10 +120,6 @@
 				1DAB9A6F152463F800D4D8E3 /* Foundation.framework in Frameworks */,
 				1DAB9A71152463F800D4D8E3 /* CoreGraphics.framework in Frameworks */,
 				1DAB9A73152463F800D4D8E3 /* CoreData.framework in Frameworks */,
-				1D47037E152702CB0058C7CC /* EGORefreshTableHeaderView.o in Frameworks */,
-				1D47037F152702CB0058C7CC /* main.o in Frameworks */,
-				1D470380152702CB0058C7CC /* RootViewController.o in Frameworks */,
-				1D470382152702CB0058C7CC /* TableViewPullAppDelegate.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,246 +188,9 @@
 		1D47030F152702CA0058C7CC /* EGOTableViewPullRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				1D470310152702CA0058C7CC /* Demo */,
 				1D47035C152702CB0058C7CC /* EGOTableViewPullRefresh */,
-				1D47036A152702CB0058C7CC /* README */,
 			);
 			path = EGOTableViewPullRefresh;
-			sourceTree = "<group>";
-		};
-		1D470310152702CA0058C7CC /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				1D470311152702CA0058C7CC /* TableViewPull */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		1D470311152702CA0058C7CC /* TableViewPull */ = {
-			isa = PBXGroup;
-			children = (
-				1D470312152702CA0058C7CC /* build */,
-				1D47033F152702CB0058C7CC /* Classes */,
-				1D47034B152702CB0058C7CC /* main.m */,
-				1D47034C152702CB0058C7CC /* Resources */,
-				1D470358152702CB0058C7CC /* TableViewPull.xcodeproj */,
-				1D47035B152702CB0058C7CC /* TableViewPull_Prefix.pch */,
-			);
-			path = TableViewPull;
-			sourceTree = "<group>";
-		};
-		1D470312152702CA0058C7CC /* build */ = {
-			isa = PBXGroup;
-			children = (
-				1D470313152702CA0058C7CC /* Debug-iphonesimulator */,
-				1D470316152702CA0058C7CC /* TableViewPull.build */,
-			);
-			path = build;
-			sourceTree = "<group>";
-		};
-		1D470313152702CA0058C7CC /* Debug-iphonesimulator */ = {
-			isa = PBXGroup;
-			children = (
-				1D470314152702CA0058C7CC /* TableViewPull.app */,
-				1D470315152702CA0058C7CC /* TableViewPull.app.dSYM */,
-			);
-			path = "Debug-iphonesimulator";
-			sourceTree = "<group>";
-		};
-		1D470316152702CA0058C7CC /* TableViewPull.build */ = {
-			isa = PBXGroup;
-			children = (
-				1D470317152702CA0058C7CC /* Debug */,
-				1D47031B152702CA0058C7CC /* Debug-iphoneos */,
-				1D47031F152702CB0058C7CC /* Debug-iphonesimulator */,
-				1D470331152702CB0058C7CC /* TableViewPull.pbxindex */,
-			);
-			path = TableViewPull.build;
-			sourceTree = "<group>";
-		};
-		1D470317152702CA0058C7CC /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-				1D470318152702CA0058C7CC /* TableViewPull.build */,
-			);
-			path = Debug;
-			sourceTree = "<group>";
-		};
-		1D470318152702CA0058C7CC /* TableViewPull.build */ = {
-			isa = PBXGroup;
-			children = (
-				1D470319152702CA0058C7CC /* build-state.dat */,
-				1D47031A152702CA0058C7CC /* TableViewPull.dep */,
-			);
-			path = TableViewPull.build;
-			sourceTree = "<group>";
-		};
-		1D47031B152702CA0058C7CC /* Debug-iphoneos */ = {
-			isa = PBXGroup;
-			children = (
-				1D47031C152702CA0058C7CC /* TableViewPull.build */,
-			);
-			path = "Debug-iphoneos";
-			sourceTree = "<group>";
-		};
-		1D47031C152702CA0058C7CC /* TableViewPull.build */ = {
-			isa = PBXGroup;
-			children = (
-				1D47031D152702CA0058C7CC /* build-state.dat */,
-				1D47031E152702CB0058C7CC /* TableViewPull.dep */,
-			);
-			path = TableViewPull.build;
-			sourceTree = "<group>";
-		};
-		1D47031F152702CB0058C7CC /* Debug-iphonesimulator */ = {
-			isa = PBXGroup;
-			children = (
-				1D470320152702CB0058C7CC /* TableViewPull.build */,
-			);
-			path = "Debug-iphonesimulator";
-			sourceTree = "<group>";
-		};
-		1D470320152702CB0058C7CC /* TableViewPull.build */ = {
-			isa = PBXGroup;
-			children = (
-				1D470321152702CB0058C7CC /* build-state.dat */,
-				1D470322152702CB0058C7CC /* build-state~.dat */,
-				1D470323152702CB0058C7CC /* Objects-normal */,
-				1D47032A152702CB0058C7CC /* TableViewPull-all-target-headers.hmap */,
-				1D47032B152702CB0058C7CC /* TableViewPull-generated-files.hmap */,
-				1D47032C152702CB0058C7CC /* TableViewPull-own-target-headers.hmap */,
-				1D47032D152702CB0058C7CC /* TableViewPull-project-headers.hmap */,
-				1D47032E152702CB0058C7CC /* TableViewPull.dep */,
-				1D47032F152702CB0058C7CC /* TableViewPull.hmap */,
-				1D470330152702CB0058C7CC /* TableViewPull~.dep */,
-			);
-			path = TableViewPull.build;
-			sourceTree = "<group>";
-		};
-		1D470323152702CB0058C7CC /* Objects-normal */ = {
-			isa = PBXGroup;
-			children = (
-				1D470324152702CB0058C7CC /* i386 */,
-			);
-			path = "Objects-normal";
-			sourceTree = "<group>";
-		};
-		1D470324152702CB0058C7CC /* i386 */ = {
-			isa = PBXGroup;
-			children = (
-				1D470325152702CB0058C7CC /* EGORefreshTableHeaderView.o */,
-				1D470326152702CB0058C7CC /* main.o */,
-				1D470327152702CB0058C7CC /* RootViewController.o */,
-				1D470328152702CB0058C7CC /* TableViewPull.LinkFileList */,
-				1D470329152702CB0058C7CC /* TableViewPullAppDelegate.o */,
-			);
-			path = i386;
-			sourceTree = "<group>";
-		};
-		1D470331152702CB0058C7CC /* TableViewPull.pbxindex */ = {
-			isa = PBXGroup;
-			children = (
-				1D470332152702CB0058C7CC /* categories.pbxbtree */,
-				1D470333152702CB0058C7CC /* cdecls.pbxbtree */,
-				1D470334152702CB0058C7CC /* decls.pbxbtree */,
-				1D470335152702CB0058C7CC /* files.pbxbtree */,
-				1D470336152702CB0058C7CC /* imports.pbxbtree */,
-				1D470337152702CB0058C7CC /* pbxindex.header */,
-				1D470338152702CB0058C7CC /* protocols.pbxbtree */,
-				1D470339152702CB0058C7CC /* refs.pbxbtree */,
-				1D47033A152702CB0058C7CC /* strings.pbxstrings */,
-				1D47033D152702CB0058C7CC /* subclasses.pbxbtree */,
-				1D47033E152702CB0058C7CC /* symbols0.pbxsymbols */,
-			);
-			path = TableViewPull.pbxindex;
-			sourceTree = "<group>";
-		};
-		1D47033A152702CB0058C7CC /* strings.pbxstrings */ = {
-			isa = PBXGroup;
-			children = (
-				1D47033B152702CB0058C7CC /* control */,
-				1D47033C152702CB0058C7CC /* strings */,
-			);
-			path = strings.pbxstrings;
-			sourceTree = "<group>";
-		};
-		1D47033F152702CB0058C7CC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1D470340152702CB0058C7CC /* Controller */,
-				1D470344152702CB0058C7CC /* Delegate */,
-				1D470347152702CB0058C7CC /* View */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		1D470340152702CB0058C7CC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				1D470341152702CB0058C7CC /* RootViewController */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		1D470341152702CB0058C7CC /* RootViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1D470342152702CB0058C7CC /* RootViewController.h */,
-				1D470343152702CB0058C7CC /* RootViewController.m */,
-			);
-			path = RootViewController;
-			sourceTree = "<group>";
-		};
-		1D470344152702CB0058C7CC /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				1D470345152702CB0058C7CC /* TableViewPullAppDelegate.h */,
-				1D470346152702CB0058C7CC /* TableViewPullAppDelegate.m */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
-		1D470347152702CB0058C7CC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1D470348152702CB0058C7CC /* RefreshTableHeaderView */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1D470348152702CB0058C7CC /* RefreshTableHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				1D470349152702CB0058C7CC /* EGORefreshTableHeaderView.h */,
-				1D47034A152702CB0058C7CC /* EGORefreshTableHeaderView.m */,
-			);
-			path = RefreshTableHeaderView;
-			sourceTree = "<group>";
-		};
-		1D47034C152702CB0058C7CC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1D47034D152702CB0058C7CC /* blackArrow.png */,
-				1D47034E152702CB0058C7CC /* blackArrow@2x.png */,
-				1D47034F152702CB0058C7CC /* blueArrow.png */,
-				1D470350152702CB0058C7CC /* blueArrow@2x.png */,
-				1D470351152702CB0058C7CC /* grayArrow.png */,
-				1D470352152702CB0058C7CC /* grayArrow@2x.png */,
-				1D470353152702CB0058C7CC /* MainWindow.xib */,
-				1D470354152702CB0058C7CC /* RootViewController.xib */,
-				1D470355152702CB0058C7CC /* TableViewPull-Info.plist */,
-				1D470356152702CB0058C7CC /* whiteArrow.png */,
-				1D470357152702CB0058C7CC /* whiteArrow@2x.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		1D470359152702CB0058C7CC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1D4703B5152702CB0058C7CC /* TableViewPull.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1D47035C152702CB0058C7CC /* EGOTableViewPullRefresh */ = {
@@ -593,9 +237,7 @@
 		1D47036B152702CB0058C7CC /* JSProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				1D47036C152702CB0058C7CC /* .gitignore */,
 				1D47036D152702CB0058C7CC /* JSProgressHUD */,
-				1D470371152702CB0058C7CC /* README.markdown */,
 			);
 			path = JSProgressHUD;
 			sourceTree = "<group>";
@@ -764,28 +406,12 @@
 			mainGroup = 1DAB9A5D152463F800D4D8E3;
 			productRefGroup = 1DAB9A69152463F800D4D8E3 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1D470359152702CB0058C7CC /* Products */;
-					ProjectRef = 1D470358152702CB0058C7CC /* TableViewPull.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1DAB9A67152463F800D4D8E3 /* BaseiOSViewControllers-DemoProject */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		1D4703B5152702CB0058C7CC /* TableViewPull.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TableViewPull.app;
-			remoteRef = 1D4703B4152702CB0058C7CC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1DAB9A66152463F800D4D8E3 /* Resources */ = {
@@ -801,45 +427,6 @@
 				1DDD9763152488E200155F5D /* icon.png in Resources */,
 				1DDD9765152488E900155F5D /* icon@2x.png in Resources */,
 				1DDD976D15248A5D00155F5D /* JSCreateToDoViewController.xib in Resources */,
-				1D470376152702CB0058C7CC /* TableViewPull.app in Resources */,
-				1D470377152702CB0058C7CC /* TableViewPull.app.dSYM in Resources */,
-				1D470378152702CB0058C7CC /* build-state.dat in Resources */,
-				1D470379152702CB0058C7CC /* TableViewPull.dep in Resources */,
-				1D47037A152702CB0058C7CC /* build-state.dat in Resources */,
-				1D47037B152702CB0058C7CC /* TableViewPull.dep in Resources */,
-				1D47037C152702CB0058C7CC /* build-state.dat in Resources */,
-				1D47037D152702CB0058C7CC /* build-state~.dat in Resources */,
-				1D470381152702CB0058C7CC /* TableViewPull.LinkFileList in Resources */,
-				1D470383152702CB0058C7CC /* TableViewPull-all-target-headers.hmap in Resources */,
-				1D470384152702CB0058C7CC /* TableViewPull-generated-files.hmap in Resources */,
-				1D470385152702CB0058C7CC /* TableViewPull-own-target-headers.hmap in Resources */,
-				1D470386152702CB0058C7CC /* TableViewPull-project-headers.hmap in Resources */,
-				1D470387152702CB0058C7CC /* TableViewPull.dep in Resources */,
-				1D470388152702CB0058C7CC /* TableViewPull.hmap in Resources */,
-				1D470389152702CB0058C7CC /* TableViewPull~.dep in Resources */,
-				1D47038A152702CB0058C7CC /* categories.pbxbtree in Resources */,
-				1D47038B152702CB0058C7CC /* cdecls.pbxbtree in Resources */,
-				1D47038C152702CB0058C7CC /* decls.pbxbtree in Resources */,
-				1D47038D152702CB0058C7CC /* files.pbxbtree in Resources */,
-				1D47038E152702CB0058C7CC /* imports.pbxbtree in Resources */,
-				1D47038F152702CB0058C7CC /* pbxindex.header in Resources */,
-				1D470390152702CB0058C7CC /* protocols.pbxbtree in Resources */,
-				1D470391152702CB0058C7CC /* refs.pbxbtree in Resources */,
-				1D470392152702CB0058C7CC /* control in Resources */,
-				1D470393152702CB0058C7CC /* strings in Resources */,
-				1D470394152702CB0058C7CC /* subclasses.pbxbtree in Resources */,
-				1D470395152702CB0058C7CC /* symbols0.pbxsymbols in Resources */,
-				1D47039A152702CB0058C7CC /* blackArrow.png in Resources */,
-				1D47039B152702CB0058C7CC /* blackArrow@2x.png in Resources */,
-				1D47039C152702CB0058C7CC /* blueArrow.png in Resources */,
-				1D47039D152702CB0058C7CC /* blueArrow@2x.png in Resources */,
-				1D47039E152702CB0058C7CC /* grayArrow.png in Resources */,
-				1D47039F152702CB0058C7CC /* grayArrow@2x.png in Resources */,
-				1D4703A0152702CB0058C7CC /* MainWindow.xib in Resources */,
-				1D4703A1152702CB0058C7CC /* RootViewController.xib in Resources */,
-				1D4703A2152702CB0058C7CC /* TableViewPull-Info.plist in Resources */,
-				1D4703A3152702CB0058C7CC /* whiteArrow.png in Resources */,
-				1D4703A4152702CB0058C7CC /* whiteArrow@2x.png in Resources */,
 				1D4703A6152702CB0058C7CC /* blackArrow.png in Resources */,
 				1D4703A7152702CB0058C7CC /* blackArrow@2x.png in Resources */,
 				1D4703A8152702CB0058C7CC /* blueArrow.png in Resources */,
@@ -848,10 +435,7 @@
 				1D4703AB152702CB0058C7CC /* grayArrow@2x.png in Resources */,
 				1D4703AC152702CB0058C7CC /* whiteArrow.png in Resources */,
 				1D4703AD152702CB0058C7CC /* whiteArrow@2x.png in Resources */,
-				1D4703AE152702CB0058C7CC /* README in Resources */,
-				1D4703AF152702CB0058C7CC /* .gitignore in Resources */,
 				1D4703B0152702CB0058C7CC /* JSProgressHUD.bundle in Resources */,
-				1D4703B2152702CB0058C7CC /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,10 +461,6 @@
 				1D47030B1526FFF10058C7CC /* JSBaseTableViewCell.m in Sources */,
 				1D47030C1526FFF10058C7CC /* JSBaseTableViewController.m in Sources */,
 				1D47030D1526FFF10058C7CC /* JSBaseViewController.m in Sources */,
-				1D470396152702CB0058C7CC /* RootViewController.m in Sources */,
-				1D470397152702CB0058C7CC /* TableViewPullAppDelegate.m in Sources */,
-				1D470398152702CB0058C7CC /* EGORefreshTableHeaderView.m in Sources */,
-				1D470399152702CB0058C7CC /* main.m in Sources */,
 				1D4703A5152702CB0058C7CC /* EGORefreshTableHeaderView.m in Sources */,
 				1D4703B1152702CB0058C7CC /* JSProgressHUD.m in Sources */,
 			);
