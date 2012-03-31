@@ -32,7 +32,7 @@
 - (NSFetchRequest *)fetchRequest
 {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    fetchRequest.entityName = @"ToDo";
+    fetchRequest.entity = [NSEntityDescription entityForName:@"ToDo" inManagedObjectContext:self.managedObjectContext];
     fetchRequest.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO]];
     
     return fetchRequest;
