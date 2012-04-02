@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Base iOS View Controllers : Convenient base VCs for all your iPhone projects if you, like me, like writing less code. Allows to very easily create controllers with table views, controllers to show data from core data, adjusting the view with the keyboard easily and automatically, and more." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Base iOS View Controllers</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/JaviSoto/Base-iOS-View-Controllers">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Base iOS View Controllers</h1>
+          <h2 id="project_tagline">Convenient base VCs for all your iPhone projects if you, like me, like writing less code. Allows to very easily create controllers with table views, controllers to show data from core data, adjusting the view with the keyboard easily and automatically, and more.</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/JaviSoto/Base-iOS-View-Controllers/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/JaviSoto/Base-iOS-View-Controllers/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Components</h1>
+
+<pre><code>JSBaseViewController
+JSBaseTableViewController
+JSBaseCoreDataTableViewController
+JSBaseTableViewCell
+</code></pre>
+
+<h1>Highlights</h1>
+
+<ul>
+<li>Adjusting your view automatically along with the keyboard.</li>
+<li>Stick a view (like a textfield) on top of the keyboard.</li>
+<li>Progress HUD showing / hiding in all your View Controllers.</li>
+<li>Automatic cell nibs instantiation. Just code what is important.</li>
+<li>Pull to refresh in one line of code.</li>
+<li>Very easily implement tables that show data from Core Data.</li>
+</ul><h1>Features</h1>
+
+<h3>- One generic method to construct your controllers:</h3>
+
+<p>Forget about implementing the right - initWith, awakeFromNib... just implement</p>
+
+<div class="highlight">
+<pre><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUp</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<p>and be sure it will be called once in all cases.</p>
+
+<h3>- Easy way to show / hide a flexible <strong>progress HUD</strong>
+</h3>
+
+<p>Very handy for when you make long-running requests from any view controller.</p>
+
+<div class="highlight">
+<pre><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">showWaitView</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">showWaitViewAndDimScreen</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">showWaitViewWithMessage:</span><span class="p">(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">message</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">hideWaitView</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">hideWaitViewWithSuccessMessage:</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">message</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">hideWaitViewWithErrorMessage:</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">message</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<h3>- Implement table views with very little code:</h3>
+
+<p>Forget about dealing with nib loading, cell reusing, etc. Just set the name of the nib file that corresponds to the cell that the table will use in the setUp method like this:</p>
+
+<div class="highlight">
+<pre><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUp</span>
+<span class="p">{</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">cellNibName</span> <span class="o">=</span> <span class="s">@"MyCellNibFileName"</span><span class="p">;</span>
+<span class="p">}</span>
+</pre>
+</div>
+
+
+<p>and than you can just implement this method to make the necessary adjustments to the cell (which you can cast to your own <em>UITableViewCell</em> subclass):</p>
+
+<div class="highlight">
+<pre><span class="k">-</span> <span class="p">(</span><span class="n">UITableViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">tableView:</span><span class="p">(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tv</span> <span class="nf">configureCell:</span><span class="p">(</span><span class="n">UITableViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nv">cell</span> <span class="nf">forRowAtIndexPath:</span><span class="p">(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<p>Only requirement is that your cell inherits from <a href="https://github.com/JaviSoto/Base-iOS-View-Controllers/blob/master/JSBaseTableViewCell.h"><em>JSBaseTableViewCell</em></a>.</p>
+
+<h3>- Add <strong>pull-to-refresh</strong> to you tables with one like of code:</h3>
+
+<p>Just set</p>
+
+<div class="highlight">
+<pre><span class="n">self</span><span class="p">.</span><span class="n">tableHasPullToRefresh</span> <span class="o">=</span> <span class="n">YES</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<p>in your setUp method. And then use these two methods:</p>
+
+<div class="highlight">
+<pre><span class="cm">/* Implement this method to respond to drag to refresh events */</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">reloadTableViewDataSource</span><span class="p">;</span>
+<span class="cm">/* Call this method when the drag to refresh load has finished */</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">doneLoadingTableViewData</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<h3>- Implement <strong>infinite scrolling</strong> in you table views:</h3>
+
+<p>Just set:</p>
+
+<div class="highlight">
+<pre><span class="n">self</span><span class="p">.</span><span class="n">tableHasInfiniteScrolling</span> <span class="o">=</span> <span class="n">YES</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<p>And you will be called to this method:</p>
+
+<div class="highlight">
+<pre><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">loadMoreItemsAfterTheLastOne</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<h3>- Automatically have your view adjusted when the keyboard appears / disappears:</h3>
+
+<p>Just by calling</p>
+
+<div class="highlight">
+<pre><span class="p">[</span><span class="n">self</span> <span class="n">registerForKeyboardNotifications</span><span class="p">];</span>
+</pre>
+</div>
+
+
+<p>in your setUp method. If it's a regular view controller, you can implement </p>
+
+<div class="highlight">
+<pre><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewWillAdjustForKeyboardHidden:</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nv">keyboardHidden</span> <span class="nf">keyboardHeight:</span><span class="p">(</span><span class="n">CGFloat</span><span class="p">)</span><span class="nv">keyboardHeight</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<p>which will be called inside an animation block that goes along with the keyboard.
+If it's a <em>Table View Controller</em>, the table will automatically adjust. if you want to provide custom behaviour, you can implement</p>
+
+<div class="highlight">
+<pre><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tableViewWillBeResizedToAdjustForKeyboardHidden:</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nv">keyboardHidden</span> <span class="nf">keyboardHeight:</span><span class="p">(</span><span class="n">CGFloat</span><span class="p">)</span><span class="nv">keyboardHeight</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<p>which will be called inside the animation block.</p>
+
+<h3>- Have a view stick on top of the keyboard and animate with it:</h3>
+
+<p>(very convenient for typical chat / comment views). Just implement the method:</p>
+
+<div class="highlight">
+<pre><span class="k">-</span> <span class="p">(</span><span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nf">keyboardAuxView</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<p>and return the view that you want to stay on top of the keyboard.</p>
+
+<h3>- Implement tables that show data from Core Data with very little code:</h3>
+
+<p>(and that are automatically refreshed with changes in them).
+Inherit from <a href="https://github.com/JaviSoto/Base-iOS-View-Controllers/blob/master/JSBaseCoreDataTableViewController.h"><em>JSBaseCoreDataTableViewController</em></a> and implement:</p>
+
+<div class="highlight">
+<pre><span class="k">-</span> <span class="p">(</span><span class="n">NSFetchRequest</span> <span class="o">*</span><span class="p">)</span><span class="nf">fetchRequest</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<p>to return an <em>NSFetchRequest</em> object corresponding to the query you want to perform. And then implement this other method that will be called on you:</p>
+
+<div class="highlight">
+<pre><span class="k">-</span> <span class="p">(</span><span class="n">UITableViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">tableView:</span><span class="p">(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tv</span> <span class="nf">configureCell:</span><span class="p">(</span><span class="n">UITableViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nv">cell</span> <span class="nf">forManagedObject:</span><span class="p">(</span><span class="n">NSManagedObject</span> <span class="o">*</span><span class="p">)</span><span class="nv">object</span><span class="p">;</span>
+</pre>
+</div>
+
+
+<h3>- Have all your cells automatically be correctly reused even if you forget to set the reuse identifier in Interface Builder:</h3>
+
+<p>For this you only need to make your cell classes inherit from <a href="https://github.com/JaviSoto/Base-iOS-View-Controllers/blob/master/JSBaseTableViewCell.h"><em>JSBaseTableViewCell</em></a>.</p>
+
+<h1>Submodules</h1>
+
+<pre><code>- JSProgressHUD: <a href="https://github.com/JaviSoto/JSProgressHUD">https://github.com/JaviSoto/JSProgressHUD</a>
+- EGOTableViewPullRefresh: <a href="https://github.com/enormego/EGOTableViewPullRefresh">https://github.com/enormego/EGOTableViewPullRefresh</a>
+</code></pre>
+
+<h1>Installation</h1>
+
+<p><strong>First</strong> clone the repository:</p>
+
+<div class="highlight">
+<pre><span class="nv">$ </span>git clone git@github.com:JaviSoto/Base-iOS-View-Controllers.git
+<span class="nv">$ </span><span class="nb">cd </span>Base-iOS-View-Controllers
+<span class="nv">$ </span>git submodule init
+<span class="nv">$ </span>git submodule update
+</pre>
+</div>
+
+
+<p><strong>Second</strong>. Drag the BaseControllers folder to your Xcode project. And remove the unneeded files (like the EGOTableViewPullRefresh sample project)</p>
+
+<p><strong>Third</strong>. Link against these frameworks:</p>
+
+<pre><code>CoreData
+QuartzCore
+</code></pre>
+
+<p><strong>Fourth</strong>. (Optional) Modify the method - (NSManagedObjectContext *)managedObjectContext in <a href="https://github.com/JaviSoto/Base-iOS-View-Controllers/blob/master/JSBaseViewController.m"><em>JSBaseViewController</em></a> by adding the needed logic to create a NSManagedObjectContext passing your NSPersistantStoreCordinator (ONLY IF YOU WANT TO USE CORE DATA).</p>
+
+<h1>Credits</h1>
+
+<p>Thanks to <a href="http://es.linkedin.com/in/oriolblanc">Oriol Blanc</a>, because a lot of this is thanks to him :)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Base iOS View Controllers maintained by <a href="https://github.com/JaviSoto">JaviSoto</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-30545231-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
