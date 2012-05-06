@@ -18,7 +18,8 @@ JSBaseTableViewCell
 
 #Features
 
-- One generic method to construct your controllers: **forget about implementing the right - initWith, awakeFromNib**... just implement
+### - One generic method to construct your controllers:
+Forget about implementing the right - initWith, awakeFromNib... just implement
 
 ```objective-c
 - (void)setUp;
@@ -26,7 +27,8 @@ JSBaseTableViewCell
 
 and be sure it will be called once in all cases.
 
-- Easy way to show / hide a flexible **progress HUD** when you make long-running requests from all your View Controllers.
+### - Easy way to show / hide a flexible **progress HUD**
+Very handy for when you make long-running requests from any view controller.
 
 ```Objective-c
 - (void)showWaitView;
@@ -37,7 +39,8 @@ and be sure it will be called once in all cases.
 - (void)hideWaitViewWithErrorMessage:(NSString *)message;
 ```
 
-- **Forget about dealing with nib loading**, cell reusing, etc and **implement table views with very little code**. Just set the name of the nib file that corresponds to the cell that the table will use in the setUp method like this:
+### - Implement table views with very little code:
+Forget about dealing with nib loading, cell reusing, etc. Just set the name of the nib file that corresponds to the cell that the table will use in the setUp method like this:
 
 ```Objective-c
 - (void)setUp
@@ -54,7 +57,8 @@ and than you can just implement this method to make the necessary adjustments to
 
 Only requirement is that your cell inherits from [*JSBaseTableViewCell*](https://github.com/JaviSoto/Base-iOS-View-Controllers/blob/master/JSBaseTableViewCell.h).
 
-- Add **pull-to-refresh** to you table view controller just by setting
+### - Add **pull-to-refresh** to you tables with one like of code:
+Just set
 
 ```Objective-c
 self.tableHasPullToRefresh = YES;
@@ -69,13 +73,21 @@ in your setUp method. And then use these two methods:
 - (void)doneLoadingTableViewData;
 ```
 
-- Same for table **infinite scrolling** with
+### - Implement **infinite scrolling** in you table views:
+Just set:
        
 ```Objective-c
 self.tableHasInfiniteScrolling = YES;
 ```
 
-- **Automatically have your view adjusted when the keyboard appears / disappears**. Just by calling
+And you will be called to this method:
+
+```Objective-c
+- (void)loadMoreItemsAfterTheLastOne;
+```
+
+### - Automatically have your view adjusted when the keyboard appears / disappears:
+Just by calling
 
 ```Objective-c
 [self registerForKeyboardNotifications];
@@ -84,10 +96,10 @@ self.tableHasInfiniteScrolling = YES;
 in your setUp method. If it's a regular view controller, you can implement 
 
 ```Objective-c
-- (void)animateViewWithKeyboardUpDirection:(BOOL)up distance:(float)distance animationDuration:(NSTimeInterval)duration animationCurve:(UIViewAnimationCurve)curve;
+- (void)viewWillAdjustForKeyboardHidden:(BOOL)keyboardHidden keyboardHeight:(CGFloat)keyboardHeight;
 ```
 
-and create your animation with that data.
+which will be called inside an animation block that goes along with the keyboard.
 If it's a *Table View Controller*, the table will automatically adjust. if you want to provide custom behaviour, you can implement
 
 ```Objective-c
@@ -96,7 +108,8 @@ If it's a *Table View Controller*, the table will automatically adjust. if you w
 
 which will be called inside the animation block.
 
-- **Have a view stick on top of the keyboard and animate with it** (very convenient for typical chat / comment views). Just implement the method:
+### - Have a view stick on top of the keyboard and animate with it:
+(very convenient for typical chat / comment views). Just implement the method:
 
 ```Objective-c
 - (UIView *)keyboardAuxView;
@@ -104,7 +117,9 @@ which will be called inside the animation block.
 
 and return the view that you want to stay on top of the keyboard.
 
-- **Implement tables that show data from Core Data with very little code** (and that are automatically refreshed with changes in them). Inherit from [*JSBaseCoreDataTableViewController*](https://github.com/JaviSoto/Base-iOS-View-Controllers/blob/master/JSBaseCoreDataTableViewController.h) and implement:
+### - Implement tables that show data from Core Data with very little code:
+(and that are automatically refreshed with changes in them).
+Inherit from [*JSBaseCoreDataTableViewController*](https://github.com/JaviSoto/Base-iOS-View-Controllers/blob/master/JSBaseCoreDataTableViewController.h) and implement:
 
 ```Objective-c
 - (NSFetchRequest *)fetchRequest;
@@ -116,7 +131,8 @@ to return an *NSFetchRequest* object corresponding to the query you want to perf
 - (UITableViewCell *)tableView:(UITableView *)tv configureCell:(UITableViewCell *)cell forManagedObject:(NSManagedObject *)object;
 ```
 
-- Have all your cells automatically be correctly reused even if you forget to set the reuse identifier in Interface Builder. For this you only need to make your cell classes inherit from [*JSBaseTableViewCell*](https://github.com/JaviSoto/Base-iOS-View-Controllers/blob/master/JSBaseTableViewCell.h).
+### - Have all your cells automatically be correctly reused even if you forget to set the reuse identifier in Interface Builder:
+For this you only need to make your cell classes inherit from [*JSBaseTableViewCell*](https://github.com/JaviSoto/Base-iOS-View-Controllers/blob/master/JSBaseTableViewCell.h).
 
 #Submodules
 
