@@ -38,13 +38,7 @@
 {
     [super viewDidLoad];
 
-    NSError *error = nil;
-    [self.fetchedResultsController performFetch:&error];
-    
-    if (error)
-    {
-        NSLog(@"[%@] Error perfoming fetch: %@", NSStringFromClass([self class]), error);
-    }
+	[self reloadData];
 }
 
 #pragma mark - Table View Methods
@@ -87,6 +81,15 @@
     }
     
     return _fetchedResultsController;
+}
+
+- (void)reloadData
+{    
+    NSError *error;
+    if (![self.fetchedResultsController performFetch:&error])
+    {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+    }
 }
 
 - (void)recreateFetchedResultsController

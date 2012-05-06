@@ -36,6 +36,9 @@
 /* Required. Return the fetch request from which results the table should be filled */
 - (NSFetchRequest *)fetchRequest;
 
+/* Call to perfom the fetch request again */
+- (void)reloadData;
+
 /* Call if you need to change the Fetch Request according to user setting (for instance to change the predicate) */
 - (void)recreateFetchedResultsController;
 
