@@ -27,9 +27,6 @@
     BOOL viewVisible;
 }
 
-/* You can get a managedObjectContext for your controller just by accessing here */
-@property (nonatomic, readonly, retain) NSManagedObjectContext *managedObjectContext;
-
 /* Optional. Implement if you want to return a different managed object ctx other than the default given to you */
 - (NSManagedObjectContext *)managedObjectContext;
 

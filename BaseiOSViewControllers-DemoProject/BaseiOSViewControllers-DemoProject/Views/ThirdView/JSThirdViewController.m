@@ -12,11 +12,15 @@
 
 #import "JSCreateToDoViewController.h"
 
-@interface JSThirdViewController ()
+#import "JSAppDelegate.h"
 
+@interface JSThirdViewController ()
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @end
 
 @implementation JSThirdViewController
+
+@synthesize managedObjectContext = _managedObjectContext;
 
 #pragma mark - Table View Methods
 
@@ -25,6 +29,9 @@
     self.title = @"Third";
     
     self.cellNibName = [JSToDoCell reuseIdentifier];
+    
+    self.managedObjectContext = [[[NSManagedObjectContext alloc] init] autorelease];
+    self.managedObjectContext.persistentStoreCoordinator = [((JSAppDelegate *)[[UIApplication sharedApplication] delegate]) persistentStoreCoordinator];
 }
 
 #pragma mark - Table View Methods
@@ -35,7 +42,7 @@
     fetchRequest.entity = [NSEntityDescription entityForName:@"ToDo" inManagedObjectContext:self.managedObjectContext];
     fetchRequest.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO]];
     
-    return fetchRequest;
+    return [fetchRequest autorelease];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tv configureCell:(UITableViewCell *)cell forManagedObject:(NSManagedObject *)object
@@ -66,6 +73,15 @@
     JSCreateToDoViewController *createToDo = [[JSCreateToDoViewController alloc] initWithManageObjectContext:self.managedObjectContext];
     [self.tabBarController presentModalViewController:createToDo animated:YES];
     [createToDo release];
+}
+
+#pragma mark - Memory Management
+
+- (void)dealloc
+{
+    [_managedObjectContext release];
+    
+    [super dealloc];
 }
 
 @end

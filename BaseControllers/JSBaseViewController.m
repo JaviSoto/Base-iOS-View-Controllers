@@ -19,7 +19,6 @@
 #import <CoreData/CoreData.h>
 
 #import "JSProgressHUD.h"
-#import "JSAppDelegate.h" // This is imported to get the persistant store coordinator. Please don't do this and put it somewhere else in your project!
 
 #define kDefaultViewKeyboardSlideSpeed 0.3f
 
@@ -30,7 +29,6 @@
     BOOL _shouldListenForKeyboardNotifications;
 }
 
-@property (nonatomic, readwrite, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) JSProgressHUD *waitView;
 
 - (void)setUp;
@@ -40,16 +38,15 @@
 
 @implementation JSBaseViewController
 
-@synthesize managedObjectContext = _managedObjectContext;
-
 @synthesize waitView = _waitView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]))
+    {
         [self setUp];
     }
+    
     return self;
 }
 
@@ -115,17 +112,8 @@
 
 - (NSManagedObjectContext *)managedObjectContext
 {
-    if (!_managedObjectContext)
-    {
-		// IMPORTANT: Create a new, separate managed Object Context for your VC here. This needs to be changed for each project!
-		_managedObjectContext = [[NSManagedObjectContext alloc] init];
-        
-        NSPersistentStoreCoordinator *persistantStoreCoordinator = [((JSAppDelegate *)[[UIApplication sharedApplication] delegate]) persistentStoreCoordinator];
-    
-        _managedObjectContext.persistentStoreCoordinator = persistantStoreCoordinator;
-    }
-    
-    return _managedObjectContext;
+    NSAssert(NO, @"You need to provide your own managedObjectContext by implementing this method");
+    return nil;
 }
 
 #pragma mark - Wait View
@@ -240,8 +228,6 @@
 - (void)dealloc
 {
 	NSLog(@"[%@] dealloc:", NSStringFromClass([self class])); // Log each dealloc. Very useful for debugging.
-    
-    [_managedObjectContext release];
     
     [_waitView release];
     
