@@ -216,7 +216,14 @@
     UIViewAnimationCurve animationCurve; [[notificationInfo valueForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
     
     CGRect keyboardFrameAtEndOfAnimation; [[notificationInfo valueForKey:UIKeyboardFrameEndUserInfoKey] getValue:&keyboardFrameAtEndOfAnimation];
-    CGFloat keyboardHeight = keyboardFrameAtEndOfAnimation.size.height;
+    CGFloat keyboardHeight; 
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    if (orientation == UIDeviceOrientationLandscapeLeft || orientation == UIDeviceOrientationLandscapeRight) {
+        keyboardHeight = keyboardFrameAtEndOfAnimation.size.width;
+    }
+    else {
+        keyboardHeight = keyboardFrameAtEndOfAnimation.size.height;
+    }
     
     NSTimeInterval animationDuration = [[notificationInfo valueForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
     
