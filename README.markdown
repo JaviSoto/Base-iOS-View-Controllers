@@ -166,3 +166,6 @@ QuartzCore
 #Credits
 
 Thanks to [Oriol Blanc](http://es.linkedin.com/in/oriolblanc), because a lot of this is thanks to him :)
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/JaviSoto/base-ios-view-controllers/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
