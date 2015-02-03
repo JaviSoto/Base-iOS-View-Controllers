@@ -49,7 +49,7 @@ Forget about dealing with nib loading, cell reusing, etc. Just set the name of t
 }
 ```
 
-and than you can just implement this method to make the necessary adjustments to the cell (which you can cast to your own *UITableViewCell* subclass):
+and then you can just implement this method to make the necessary adjustments to the cell (which you can cast to your own *UITableViewCell* subclass):
 
 ```Objective-c
 - (UITableViewCell *)tableView:(UITableView *)tv configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
